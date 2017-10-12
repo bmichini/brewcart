@@ -141,6 +141,7 @@ void service_flowmeter()
     //low to high transition!
     pulses++;
   }
+  lastflowpinstate = x;
 }
 
 
