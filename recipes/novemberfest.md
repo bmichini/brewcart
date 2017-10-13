@@ -9,7 +9,7 @@
 | OG         | 1.057  | 
 | FG         | 1.011  | 
 | ABV        | 6.1%   |   
-| SRM        | 10     |   
+| SRM        | 9      |   
 | IBU        | 20     |   
 
 ## Ingredients
@@ -17,9 +17,9 @@
 #### Fermentables
 
 * 4.5 lbs Weyermann Munich Type I
-* 3.0 lbs Weyermann Pils
+* 3.0 lbs Weyermann Pilsner
 * 3.0 lbs Weyermann Vienna
-* 0.5 lbs Weyermann CaraMunich
+* 0.5 lbs Briess Caramel 40L
 * 0.5 lbs Weyermann Melanoidin
 
 Total grain: 11.5 lbs
