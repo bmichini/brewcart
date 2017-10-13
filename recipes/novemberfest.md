@@ -31,15 +31,19 @@ Total grain: 11.5 lbs
 
 #### Yeast
 
-* 450 billion cells WLP830 German Lager or WLP833 German Bock Lager
+* 450 billion cells WLP830 German Lager
 
 #### Water
 
-Treat mash and sparge water to 5.7 pH, 85 ppm Ca2+, and 2:1 ratio chloride:sulfate. Using SF municipal water with additions of phosphoric acid, CaCl2, and gypsum.
+San Francisco municipal water (report [here](http://www.sfwater.org/index.aspx?page=634)). Target 85 ppm Ca, and 2:1 ratio chloride:sulfate.
+
+Treat all brewing water with 0.75 g/gal of CaCl and 0.4 g/gal of gypsum (CaSO4).
+
+Adjust sparge water to 5.7 pH by adding 2.2 mL/gal of 10% phosphoric acid.
 
 ## Process
 
-Mash all grains.  Step mash, thickness 2.0 qts/lb (5.75 gal for 11.5 lbs grain).
+Mash all grains. Step mash, thickness 2.0 qts/lb (5.75 gal for 11.5 lbs grain).
 
 * 131 degF (10 mins) dough-in/protein rest
 * 145 degF (30 mins) beta amylase saccharification
