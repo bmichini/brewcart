@@ -50,10 +50,6 @@ float kettle_watts = 0.0;
 int kettle_dutycycle_ms = 0;
 void setKettleWatts ( float watts )
 {
-  if (watts < 0.0 ){kettle_watts = 0.0;}
-  else if (watts > KETTLE_MAX_WATTS ){kettle_watts = KETTLE_MAX_WATTS;}
-  else{kettle_watts=watts;}
-
   kettle_dutycycle_ms = (int) ( kettle_watts / KETTLE_TOTAL_WATTS * PWM_PERIOD_MS );
 }
 
@@ -66,10 +62,6 @@ float rims_watts = 0.0;
 int rims_dutycycle_ms = 0;
 void setRIMSWatts ( float watts )
 {
-  if (watts < 0.0 ){rims_watts = 0.0;}
-  else if (watts > RIMS_MAX_WATTS ){rims_watts = RIMS_MAX_WATTS;}
-  else{rims_watts=watts;}
-
   rims_dutycycle_ms = (int) ( rims_watts / RIMS_TOTAL_WATTS * PWM_PERIOD_MS );
 }
 
@@ -83,9 +75,6 @@ const float RIMS_SETPOINT_MAX_F = 185.0;
 float rims_setpoint_f = RIMS_SETPOINT_MIN_F;
 void setRIMStempF( float tempF )
 {
-  if(tempF<RIMS_SETPOINT_MIN_F){rims_setpoint_f=RIMS_SETPOINT_MIN_F;}
-  else if(tempF>RIMS_SETPOINT_MAX_F){rims_setpoint_f=RIMS_SETPOINT_MAX_F;}
-  else{rims_setpoint_f=tempF;}
 }
 
 // PWM CONTROL
@@ -273,6 +262,19 @@ void loop() {
     setRIMSWatts( 0 );
   }
 
+<<<<<<< HEAD
+=======
+  // Calculate delta in wattage necessary to get RIMS temp to set point
+  // Calculated based on flow rate of water and temperature delta
+  float dwatts = (degF2degC(rims_setpoint_f) - degF2degC(tempF_RIMS))*flowrate_gpm / LPS_2_GPM * 4184.0;
+
+  // Rate limit the delta wattage to prevent chatter
+  dwatts = constrain(dwatts, RIMS_MIN_DWATTS, RIMS_MAX_DWATTS);
+
+  // Set RIMS wattage (set function applies limits)
+  setRIMSWatts( rims_watts + dwatts );
+
+>>>>>>> fb0833d61384c16c24748783edcafbd8f74333ac
   // Update the LCD display
   lcdCount++;
   if (lcdCount % 4 == 0){updateLCD();}
