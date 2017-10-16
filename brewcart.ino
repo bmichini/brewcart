@@ -5,29 +5,33 @@
 #include <DallasTemperature.h>
 
 // Pin defs
-int PIN_ENC1_A = 2;
-int PIN_ENC1_B = 3;
-int PIN_BUTTON1 = 4;
-int PIN_ENC2_A = 5;
-int PIN_ENC2_B = 6;
-int PIN_BUTTON2 = 7;
+int PIN_ENC1_A  = 14;
+int PIN_ENC1_B  = 15;
+int PIN_BUTTON1 = 16;
+int PIN_ENC2_A  = 17;
+int PIN_ENC2_B  = 18;
+int PIN_BUTTON2 = 19;
 
 int PIN_FLOWMETER = 13;
-int PIN_THERMOMETER = 12;
+int PIN_THERMOMETER = 2;
+int PIN_THERMOMETER_PU = 3;
 
-int PIN_RELAY_RIMS = 8;
-int PIN_RELAY_KETTLE = 9;
+int PIN_RELAY_RIMS = 9;
+int PIN_RELAY_KETTLE = 10;
 
-int PIN_LCD_TX = 11;
-int PIN_LCD_RX = 10;// Not used, but need to declare for softserial anyway
+int PIN_LCD_TX = 8;
+int PIN_LCD_RX = 7;// Not used, but need for softserial initialization
 
 // Rotary encoder handles
 ClickEncoder *encoder1;
 ClickEncoder *encoder2;
 
 // Thermometer addresses for RIMS temp sensor and mash tun temp sensor
-DeviceAddress ADDR_RIMS_THERMO = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
-DeviceAddress ADDR_MT_THERMO = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
+DeviceAddress ADDR_RIMS_THERMO = { 0x28, 0xFF, 0x7D, 0x40, 0xA0, 0x16, 0x03, 0x7B };
+DeviceAddress ADDR_MT_THERMO = { 0x28, 0xFF, 0x5A, 0x5E, 0xA0, 0x16, 0x03, 0xFF };
+const float RIMS_THERMO_OFFSET_F = 2.0;
+const float MT_THERMO_OFFSET_F = 2.0;
+
 
 // Globals for measured temps
 float tempF_RIMS = 0.0;
@@ -38,6 +42,7 @@ OneWire oneWire(PIN_THERMOMETER);
 DallasTemperature thermometers(&oneWire);
 
 // KETTLE WATTAGE CONTROL
+const float STEP_WATTS = 50.0;
 const float PWM_PERIOD_MS = 100.0;
 const float KETTLE_MAX_WATTS = 3000.0;
 const float KETTLE_TOTAL_WATTS = 3000.0;
@@ -53,7 +58,7 @@ void setKettleWatts ( float watts )
 }
 
 // RIMS WATTAGE CONTROL
-const float RIMS_MIN_DWATTS = -5.0;
+const float RIMS_MIN_DWATTS = -25.0;
 const float RIMS_MAX_DWATTS = 5.0;
 const float RIMS_MAX_WATTS = 2000.0;
 const float RIMS_TOTAL_WATTS = 2000.0;
@@ -161,7 +166,36 @@ void timerIsr() {
 // Software serial for LCD display
 SoftwareSerial lcdSerial(PIN_LCD_RX, PIN_LCD_TX);
 
+void updateLCD()
+{
+  Serial.print("\n\n\n\n\n");
+  Serial.print("MT temp F: ");Serial.println(tempF_MT);
+  Serial.print("Flow rate: ");Serial.println(flowrate_gpm);
+  Serial.print("\nKettle Watts: "); Serial.println( kettle_watts );
+  Serial.print("\nRIMS setpoint F: "); Serial.println( rims_setpoint_f );
+  Serial.print("RIMS temp F: ");Serial.println(tempF_RIMS);
+  Serial.print("RIMS watts: ");Serial.println( rims_watts );
+  
+  /*char line1[17] = {0};
+  char line2[17] = {0};
+  sprintf(line1, "abc");
+  sprintf(line2, "123");
+
+  lcdSerial.write(254); // move cursor to beginning of first line
+  lcdSerial.write(128);
+  lcdSerial.write(line1);
+  
+  lcdSerial.write(254); // move cursor to beginning of first line
+  lcdSerial.write(192);
+  lcdSerial.write(line2);
+*/
+}
+
 void setup() {
+
+  // Debug serial setup
+  Serial.begin( 115200 );
+  
   // Encoder/button setup
   encoder1 = new ClickEncoder( PIN_ENC1_A, PIN_ENC1_B, PIN_BUTTON1);
   encoder2 = new ClickEncoder( PIN_ENC2_A, PIN_ENC2_B, PIN_BUTTON2);
@@ -174,41 +208,38 @@ void setup() {
   pinMode( PIN_BUTTON1, INPUT); digitalWrite( PIN_BUTTON1, HIGH );
   pinMode( PIN_BUTTON2, INPUT); digitalWrite( PIN_BUTTON2, HIGH );
 
+  // Thermometer pull-up
+  pinMode(PIN_THERMOMETER_PU, OUTPUT);
+  digitalWrite(PIN_THERMOMETER_PU, HIGH);
+  delay(100);
+
   // Initialize thermometers and set resolution
   // 10-bit resolution gets 0.25 degC resolution w/ ~200ms sample time
   thermometers.begin();
   thermometers.setResolution(ADDR_RIMS_THERMO, 10);
   thermometers.setResolution(ADDR_MT_THERMO, 10);
-
-  // DEBUG: Test to print the address of a connected thermometer
-  /*DeviceAddress d;
-  if (thermometers.getAddress(d, 0)) 
-  {
-    Serial.print("Device 0 addr: ");
-    for (uint8_t i = 0; i < 8; i++)
-    {
-      // zero pad the address if necessary
-      if (d[i] < 16) Serial.print("0");
-      Serial.print(d[i], HEX);
-      Serial.print(" ");
-    }
-  }*/
     
 
   // Flow meter setup
   pinMode(PIN_FLOWMETER, INPUT);
 
   // LCD setup
-  lcdSerial.begin(9600);
+  /*lcdSerial.begin(9600);
+  delay(500);
+  lcdSerial.write(124); // 124 = brightness command
+  lcdSerial.write(0x0C); // brightness level (128-157)
+  delay(500);
+  lcdSerial.write(124); // 124 = brightness command
+  lcdSerial.write(130); // brightness level (128-157)
+  delay(500);
+  lcdSerial.write(254);
+  lcdSerial.write(1);*/
 
   // Relay output setup
   pinMode(PIN_RELAY_RIMS, OUTPUT);
   digitalWrite( PIN_RELAY_RIMS, LOW);
   pinMode(PIN_RELAY_KETTLE, OUTPUT);
   digitalWrite( PIN_RELAY_KETTLE, LOW);
-
-  // Debug serial setup
-  Serial.begin( 115200 );
 
   // Service timer setup
   Timer1.initialize(1000);
@@ -218,36 +249,32 @@ void setup() {
 
 // This loop runs the controller as fast as the temp sensor reads will allow
 // For the 10-bit temp sensor setting, this will be about every 200ms or 5Hz
+int lcdCount = 0;
 void loop() {
   // Send command to begin temperature conversion
   thermometers.requestTemperatures();
 
   // After conversion complete, read temperatures
-  tempF_RIMS = degC2degF(thermometers.getTempC(ADDR_RIMS_THERMO));
-  tempF_MT = degC2degF(thermometers.getTempC(ADDR_MT_THERMO));
-  Serial.print("\n\n");
-  Serial.print("RIMS temp F: ");Serial.println(tempF_RIMS);
-  Serial.print("MT temp F: ");Serial.println(tempF_MT);
-  Serial.print("Flow rate: ");Serial.println(flowrate_gpm);
+  tempF_RIMS = degC2degF(thermometers.getTempC(ADDR_RIMS_THERMO)) + RIMS_THERMO_OFFSET_F;
+  tempF_MT = degC2degF(thermometers.getTempC(ADDR_MT_THERMO)) + MT_THERMO_OFFSET_F;
+  
+  // Set Kettle wattage from encoder
+  setKettleWatts ( kettle_watts + ((float)encoder2->getValue())*STEP_WATTS);
 
-  // Check if flowrate is sufficient to fire RIMS
-  if( flowrate_gpm < MIN_RIMS_FLOWRATE_GPM)
+  // Set RIMS temp from encoder
+  setRIMStempF( rims_setpoint_f + ((float)encoder1->getValue())*0.5 );
+
+  // Simple bang-bang controller for RIMS outlet temp control
+  if( tempF_RIMS < rims_setpoint_f && flowrate_gpm > MIN_RIMS_FLOWRATE_GPM )
+  {
+    setRIMSWatts( RIMS_MAX_WATTS );
+  }else
   {
     setRIMSWatts( 0 );
-    return;
   }
 
-  // Calculate delta in wattage necessary to get RIMS temp to set point
-  // Calculated based on flow rate of water and temperature delta
-  float dwatts = (degF2degC(rims_setpoint_f) - degF2degC(tempF_RIMS))*flowrate_gpm / LPS_2_GPM * 4184.0;
-
-  // Rate limit the delta wattage to prevent chatter
-  if( dwatts < RIMS_MIN_DWATTS ){dwatts = RIMS_MIN_DWATTS;}
-  if( dwatts > RIMS_MAX_DWATTS ){dwatts = RIMS_MAX_DWATTS;}
-
-  // Set RIMS wattage (set function applies limits)
-  setRIMSWatts( rims_watts + dwatts );
-
   // Update the LCD display
+  lcdCount++;
+  if (lcdCount % 4 == 0){updateLCD();}
   
 }
