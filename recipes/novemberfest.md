@@ -68,8 +68,21 @@ Boil 90 min. Whirlpool and chill within 20 minutes after knockout to prevent DMS
 
 ## Brewing Notes
 
-  - measured values
-  - equipment/process issues/notes
+Pump recirculation rate during mash was 1.8 gpm.
+
+Boil kettle power setting seemed best at about 2000W, which resulting in about 0.72 gal/hr evaporation rate. Running at 2500W resulted in about a 1.25 gal/hr evaporation rate.
+
+| Value         | Measured  |
+| :-----------: |:---------:|
+| Pre-boil SG   | 1.047     |
+| Pre-boil vol  | 7 gal     |
+| Post-boil vol | ~5.75 gal |
+| OG            | 1.057     | 
+| FG            |           | 
+| ABV           |           | 
+
+
+Oxygenated and pitched yeast ~12 hours after chilling to 50 degF. Airlock activity after 24 hours - about 1 bubble per second.
 
 ## Tasting Notes
 
