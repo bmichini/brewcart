@@ -84,6 +84,8 @@ Boil kettle power setting seemed best at about 2000W, which resulting in about 0
 
 Oxygenated and pitched yeast ~12 hours after chilling to 50 degF. Airlock activity after 24 hours - about 1 bubble per second.
 
+9 days after pitching yeast, measured gravity was 1.019.
+
 ## Tasting Notes
 
 * Did the beer achieve target characteristics?
