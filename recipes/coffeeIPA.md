@@ -9,8 +9,8 @@
 | OG         | 1.072  | 
 | FG         | 1.011  | 
 | ABV        | 8.0%   |   
-| SRM        | 8      |   
-| IBU        | 75     |   
+| SRM        | 9      |   
+| IBU        | 81     |   
 
 ## Ingredients
 
@@ -25,15 +25,18 @@ Total fermentables: 16.2 lbs
 
 #### Hops
 
-* 1.0 oz Columbus/Tomahawk (14.0% AA) @ 60 minutes
-* 1.0 oz Motueka (7% AA) @ flameout (15 minute stand)
-* 1.0 oz Azacca (15% AA) @ flameout (15 minute stand)
-* 1.0 oz Citra (12% AA) @ flameout (15 minute stand)
-* 1.0 oz Mosaic (12% AA) @ flameout (15 minute stand)
-* 1.0 oz Centennial (10% AA) (whole leaf) @ hopback
+* 1.0 oz Columbus/Tomahawk (11.6% AA) @ 60 minutes
+* 1.0 oz Azacca (10.4% AA) @ 60 minutes
+* 1.0 oz Motueka (6.1% AA) @ flameout (15 minute stand)
+* 1.0 oz Azacca (10.4% AA) @ flameout (15 minute stand)
+* 1.0 oz Citra (11.8% AA) @ flameout (15 minute stand)
+* 1.0 oz Mosaic (11.5% AA) @ flameout (15 minute stand)
+* 1.0 oz Centennial (9.3% AA) (whole leaf) @ hopback
 * 2.0 oz Azacca @ dry hop (3 days)
 * 2.0 oz Mosaic @ dry hop (3 days)
 * 2.0 oz Motueka @ dry hop (3 days)
+
+Total hops: 13 oz (holy smokes!)
 
 #### Yeast
 
@@ -41,34 +44,37 @@ Total fermentables: 16.2 lbs
 
 #### Water
 
-San Francisco municipal water (report [here](http://www.sfwater.org/index.aspx?page=634)). Target 85 ppm Ca, and 1:3 ratio chloride:sulfate.
+San Francisco municipal water (info [here](docs/water.md)). Target 90 ppm Ca, and 3:1 ratio sulfate:chloride. Use 1.0 g/gal gypsum and 0.3 g/gal calcium chloride.
 
-Adjust sparge water to 5.7 pH by adding 2.2 mL/gal of 10% phosphoric acid.
+For mash water, add 1.0 mL/gal of 10% phosphoric acid to achieve mash pH of 5.35 (measured at room temperature).
+
+For sparge water, adjust to 5.7 pH by adding 0.7 mL/gal of 10% phosphoric acid.
 
 ## Process
 
-Mash all grains. Mash thickness x qts/lb (y gal for z lbs grain).
+Mash all grains. Mash thickness 1.53 qts/lb (6 gal for 15.7 lbs grain).
 
 * 150 degF (60 mins) saccharification
 * 168 degF (10 mins) mash out
 
-Batch sparge, collecting 3.75 gallons with first batch, and 3.75 gallons with second batch. Add dextrose in the kettle.
+Batch sparge, collecting 4 gallons with first batch, and 3.5 gallons with second batch. Add dextrose in the kettle.
 
 Target pre-boil volume: 7.5 gal. Target pre-boil gravity: 1.064 (after adding dextrose).
 
-Boil 75 min. Whirlpool and chill within 20 minutes after knockout.
+Boil 75 min. Whirlpool and chill within 20 minutes after knockout. Add hops continuously during the whirlpool for a variety of aromatics in the finished beer.
 
 ## Fermentation and Conditioning
 
-* Ferment at 67 degF for 1 week
+* Ferment at 67 degF for 1 week, allowing temperature to rise to about 72 degF after the first few days. Ensure desired attenuation before cold crashing.
 * Cold-condition 35 degF for 2 weeks
 * Add dry hops just prior to serving
-* Blend coffee into beer just after dry hopping
+* Blend cold-brew coffee into beer just after dry hopping
 
 Test blending coffee into beer at rates around 1% coffee by volume.
 
 ## Brewing Notes
 
+Made starter with 2 packs of WLP001 (born-on date 8/19/2017 for 50% viability) and 2L of 1.035 wort. Stir plate for 18 hours, then cold crash and decant. Anticipated final cell count of ~300 billion.
 
 ## Tasting Notes
 
@@ -77,4 +83,4 @@ Test blending coffee into beer at rates around 1% coffee by volume.
 
 ## Resources
 
-Any recipes or links that inspired this brew?
+Beer was loosely inspired by Rogue Cold Brew IPA and Oskar Blues IPA blended with cold brew coffe.
