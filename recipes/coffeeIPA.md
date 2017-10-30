@@ -44,7 +44,7 @@ Total hops: 13 oz (holy smokes!)
 
 #### Water
 
-San Francisco municipal water (info [here](docs/water.md)). Target 90 ppm Ca, and 3:1 ratio sulfate:chloride. Use 1.0 g/gal gypsum and 0.3 g/gal calcium chloride.
+San Francisco municipal water (info [here](/docs/water.md)). Target 90 ppm Ca, and 3:1 ratio sulfate:chloride. Use 1.0 g/gal gypsum and 0.3 g/gal calcium chloride.
 
 For mash water, add 1.0 mL/gal of 10% phosphoric acid to achieve mash pH of 5.35 (measured at room temperature).
 
