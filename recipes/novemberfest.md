@@ -84,7 +84,11 @@ Boil kettle power setting seemed best at about 2000W, which resulting in about 0
 
 Oxygenated and pitched yeast ~12 hours after chilling to 50 degF. Airlock activity after 24 hours - about 1 bubble per second.
 
-9 days after pitching yeast, measured gravity was 1.019.
+9 days after pitching yeast, measured gravity was 1.019. Noted a slight buttery diacetyl mouthfeel.
+
+Started diacetyl rest 11 days after pitching yeast. Raise temperature by 5 degF per day to 65 degF, and let sit at 65 degF for 2 days. Then lower by 5 degF per day to lagering temperature. Due to a temperature controller error, accidentally raised the beer temperature from 50 degF to 60 degF in one day. Remainder of profile was followed normally.
+
+Transferred to corny keg 16 days after pitching yeast (when at 45 degF). Beer filled almost the entire keg. Moved to refrigerator set to 35 degF for lagering.
 
 ## Tasting Notes
 

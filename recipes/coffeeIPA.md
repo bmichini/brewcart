@@ -61,11 +61,11 @@ Batch sparge, collecting 4 gallons with first batch, and 3.5 gallons with second
 
 Target pre-boil volume: 7.5 gal. Target pre-boil gravity: 1.064 (after adding dextrose).
 
-Boil 75 min. Whirlpool and chill within 20 minutes after knockout. Add hops continuously during the whirlpool for a variety of aromatics in the finished beer.
+Boil 60 min. Whirlpool and chill within 20 minutes after knockout. Add hops continuously during the whirlpool for a variety of aromatics in the finished beer.
 
 ## Fermentation and Conditioning
 
-* Ferment at 67 degF for 1 week, allowing temperature to rise to about 72 degF after the first few days. Ensure desired attenuation before cold crashing.
+* Ferment at 66 degF for 1 week, allowing temperature to rise to about 72-75 degF after the first 3 days. Ensure desired attenuation before cold crashing.
 * Cold-condition 35 degF for 2 weeks
 * Add dry hops just prior to serving
 * Blend cold-brew coffee into beer just after dry hopping
@@ -74,7 +74,24 @@ Test blending coffee into beer at rates around 1% coffee by volume.
 
 ## Brewing Notes
 
-Made starter with 2 packs of WLP001 (born-on date 8/19/2017 for 50% viability) and 2L of 1.035 wort. Stir plate for 18 hours, then cold crash and decant. Anticipated final cell count of ~300 billion.
+Made starter with 2 packs of WLP001 (born-on date 8/19/2017 for 50% viability) and 2L of 1.035 wort. Stir plate for 18 hours, then cold crash and decant. Estimated final cell count of ~300 billion.
+
+Forgot to add brewing salts and acid until 5 minutes into the mash.
+
+| Value         | Measured  |
+| :-----------: |:---------:|
+| Pre-boil SG   | 1.059     |
+| Pre-boil vol  | 7.5 gal   |
+| Post-boil vol | ~6.5 gal  |
+| OG            | 1.069     | 
+| FG            |           | 
+| ABV           |           | 
+
+Measured pre-boil gravity (after adding dextrose) was 1.059, and target was 1.064 (indicates our efficiency is probably closer to 70% rather than 75%). Boiled for 75 minutes and a bit harder to reach target OG.
+
+Boiled off 0.96 gal over 75 min (11% per hour evaporation rate) with kettle set to 2500 W for the entire boil.
+
+Chilled to about 70 degF, chilled down a bit, and pitched yeast to ~65 degF wort.
 
 ## Tasting Notes
 
