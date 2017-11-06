@@ -79,6 +79,7 @@ Boil kettle power setting seemed best at about 2000W, which resulting in about 0
 | Post-boil vol | ~5.75 gal |
 | OG            | 1.057     | 
 | FG            |           | 
+| AA            |           | 
 | ABV           |           | 
 
 
@@ -89,6 +90,16 @@ Oxygenated and pitched yeast ~12 hours after chilling to 50 degF. Airlock activi
 Started diacetyl rest 11 days after pitching yeast. Raise temperature by 5 degF per day to 65 degF, and let sit at 65 degF for 2 days. Then lower by 5 degF per day to lagering temperature. Due to a temperature controller error, accidentally raised the beer temperature from 50 degF to 60 degF in one day. Remainder of profile was followed normally.
 
 Transferred to corny keg 16 days after pitching yeast (when at 45 degF). Beer filled almost the entire keg. Moved to refrigerator set to 35 degF for lagering.
+
+Gravity reading at 18 days after pitching yeast was 1.015 (4 points above target FG), for an apparent attenuation of 73% (WLP830 should be 74-79%). Possbile causes of under-attenuation:
+
+* Beta amylase saccharification too short (only 30 minutes, maybe longer needed)
+* Not long enough primary fermentation (try 2 weeks next time)
+* Not enough oxygen at beginning of fermentation (try longer O2 injection/finer bubbles)
+* Yeast: not viable enough (amount should have been OK at 1.7 million cells/mL-degPlato)
+* Not long enough diacetyl rest (try 2-3 days next time)
+* Temperature swings during fermentation (controller error)
+* other stuff?
 
 ## Tasting Notes
 
