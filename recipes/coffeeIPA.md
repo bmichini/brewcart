@@ -93,6 +93,8 @@ Boiled off 0.96 gal over 75 min (11% per hour evaporation rate) with kettle set 
 
 Chilled to about 70 degF, chilled down a bit, and pitched yeast to ~65 degF wort.
 
+7 days after pitching yeast, gravity was 1.011. Good hop aroma and flavor.
+
 ## Tasting Notes
 
 * Did the beer achieve target characteristics?
