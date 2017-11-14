@@ -84,8 +84,8 @@ Forgot to add brewing salts and acid until 5 minutes into the mash.
 | Pre-boil vol  | 7.5 gal   |
 | Post-boil vol | ~6.5 gal  |
 | OG            | 1.069     | 
-| FG            |           | 
-| ABV           |           | 
+| FG            | 1.010     | 
+| ABV           | 7.8%      | 
 
 Measured pre-boil gravity (after adding dextrose) was 1.059, and target was 1.064 (indicates our efficiency is probably closer to 70% rather than 75%). Boiled for 75 minutes and a bit harder to reach target OG.
 
@@ -94,6 +94,8 @@ Boiled off 0.96 gal over 75 min (11% per hour evaporation rate) with kettle set 
 Chilled to about 70 degF, chilled down a bit, and pitched yeast to ~65 degF wort.
 
 7 days after pitching yeast, gravity was 1.011. Good hop aroma and flavor.
+
+11/13 transferred to keg, refracto reading 8.2 brix (specific gravity of 1.010).
 
 ## Tasting Notes
 

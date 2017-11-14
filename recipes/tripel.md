@@ -28,6 +28,10 @@ Total grain: 15.375 lbs
 * 1.0 oz Newport (11.1% AA) @ 60 minutes
 * 1.0 oz Styrian Goldings (3.0% AA) @ 15 minutes
 
+#### Misc
+
+* 0.25 oz Coriander seed (crushed) @ 5 minutes
+
 #### Yeast
 
 * 330 billion cells Wyeast 1214 (Chimay strain, same as WLP500)
@@ -51,7 +55,7 @@ Mash all grains. Step mash, thickness 1.56 qts/lb (6 gal for 15.375 lbs grain).
 
 Batch sparge, collecting 4 gallons with first batch, and 4 gallons with second batch. Add sugar in the kettle.
 
-Target pre-boil volume: 8.0 gal. Target pre-boil gravity: XX (after adding sugar).
+Target pre-boil volume: 8.0 gal. Target pre-boil gravity: 1.066 (after adding sugar).
 
 Boil 90 min. Whirlpool and chill within 20 minutes after knockout.
 
@@ -63,18 +67,31 @@ Boil 90 min. Whirlpool and chill within 20 minutes after knockout.
 
 ## Brewing Notes
 
+Made starter with 2 packages of Wyeast 1214 (born-on date 9/20/2017 for ~60% viability) and 2L of 1.035 wort. Stir plate for 24 hours, then pitched directly to the wort. Estimated final cell count of ~330 billion. The starter did not show any signs of fermentation, though this yeast is apparently quite slow to start.
+
 | Value         | Measured  |
 | :-----------: |:---------:|
-| Pre-boil SG   |      |
-| Pre-boil vol  |      |
-| Post-boil vol |  |
-| OG            |      | 
+| Pre-boil SG   | 1.071     |
+| Pre-boil vol  | 8.0 gal   |
+| Post-boil vol | 6.7 gal   |
+| OG            | 1.084     | 
 | FG            |           | 
 | AA            |           | 
 | ABV           |           | 
 
+Measured mash pH after 20 mins: ~5.70 @ room temp (or about 5.4 at mash temperature).
 
+Sparge water pH was 6.95 @ room temp after adding 0.7 mL/gal of acid. Added anther 0.6 mL/gal (total of 1.3 mL/gal) and measured pH was 6.6. Added another 0.45 mL/gal (total 1.75 mL/gal) and measured pH was 6.2. Next time try adding more acid.
 
+Collected only 3.5 gal in first batch, and 4.5 gal in second batch.
+
+Boil kettle volumes during boil:
+
+* 8.02 gal @ 90 mins (2500 W)
+* 7.61 gal @ 50 mins (rate: 0.6 gal per hour) (increased to 3000 W)
+* 6.70 gal @ 0 mins
+
+Chilled to ~67 degF, oxygenated, and pitched entire 2L starter. Set fridge to 65 degF. Added more oxygen at 12 hours - no visible activity.
 
 ## Tasting Notes
 
