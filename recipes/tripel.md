@@ -81,7 +81,7 @@ Made starter with 2 packages of Wyeast 1214 (born-on date 9/20/2017 for ~60% via
 
 Measured mash pH after 20 mins: ~5.70 @ room temp (or about 5.4 at mash temperature).
 
-Sparge water pH was 6.95 @ room temp after adding 0.7 mL/gal of acid. Added anther 0.6 mL/gal (total of 1.3 mL/gal) and measured pH was 6.6. Added another 0.45 mL/gal (total 1.75 mL/gal) and measured pH was 6.2. Next time try adding more acid.
+Sparge water pH was 6.95 @ room temp after adding 0.7 mL/gal of acid. Added anther 0.6 mL/gal (total of 1.3 mL/gal) and measured pH was 6.6. Added another 0.45 mL/gal (total 1.75 mL/gal) and measured pH was 6.2. Next time try adding more acid. Note all pH measurements were made at room temperature.
 
 Collected only 3.5 gal in first batch, and 4.5 gal in second batch.
 
@@ -91,7 +91,7 @@ Boil kettle volumes during boil:
 * 7.61 gal @ 50 mins (rate: 0.6 gal per hour) (increased to 3000 W)
 * 6.70 gal @ 0 mins
 
-Chilled to ~67 degF, oxygenated, and pitched entire 2L starter. Set fridge to 65 degF. Added more oxygen at 12 hours - no visible activity.
+Chilled to ~67 degF, oxygenated, and pitched entire 2L starter. Set fridge to 65 degF. Added more oxygen at 12 hours - no visible activity. After 36 hours there was significant visible fermentation activity.
 
 ## Tasting Notes
 

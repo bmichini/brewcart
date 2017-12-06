@@ -103,6 +103,8 @@ Gravity reading at 18 days after pitching yeast was 1.015 (4 points above target
 
 ## Tasting Notes
 
+4 weeks after brewing: Side-by-side tasting with commercial example. Our beer was much sweeter and 'heavier', and had what could be described as a bubblegum note.
+
 * Did the beer achieve target characteristics?
 * Photos of the beer
 
