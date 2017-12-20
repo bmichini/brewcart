@@ -27,9 +27,9 @@ Total grain: 20.7 lbs
 
 #### Hops
 
-* 2.0 oz Cluster (7.0% AA) @ 60 minutes
-* 1.0 oz Crystal (3.5% AA) @ flameout
-* 1.0 oz Northern Brewer (8.5% AA) @ flameout
+* 2.0 oz Crystal (5.7% AA) @ 60 minutes
+* 1.0 oz Centennial (9.7% AA) @ flameout
+* 1.0 oz Northern Brewer (7.3% AA) @ flameout
 
 #### Yeast
 
@@ -67,16 +67,19 @@ Boil 60 min. Whirlpool and chill within 20 minutes after knockout.
 
 | Value         | Measured  |
 | :-----------: |:---------:|
-| Pre-boil SG   |           |
-| Pre-boil vol  |           |
-| Post-boil vol |           |
-| OG            |           | 
+| Pre-boil SG   | 1.075     |
+| Pre-boil vol  | 6.7 gal   |
+| Post-boil vol | 5.6 gal   |
+| OG            | 1.091     | 
 | FG            |           | 
 | AA            |           | 
 | ABV           |           | 
 
-Measured mash pH after 20 mins: ~5.70 @ room temp (or about 5.4 at mash temperature).
+Added ~1.15 mL/gal of phosphoric to mash water to get to 5.7.
 
+Measured mash pH after 10 mins: ~5.10 @ room temp (or about 4.9 at mash temperature) - a little bit low (probably due to roasted malts).
+
+Only collected 2.8 gal on first batch - needed to collect 3.9 on second batch (need to account for RIMS rocket dead space next time, 8" tall 5" diameter = ~0.7 gal)
 
 ## Tasting Notes
 
