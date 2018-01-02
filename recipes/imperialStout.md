@@ -64,22 +64,23 @@ Boil 60 min. Whirlpool and chill within 20 minutes after knockout.
 
 ## Brewing Notes
 
-
 | Value         | Measured  |
 | :-----------: |:---------:|
 | Pre-boil SG   | 1.075     |
 | Pre-boil vol  | 6.7 gal   |
 | Post-boil vol | 5.6 gal   |
 | OG            | 1.091     | 
-| FG            |           | 
-| AA            |           | 
-| ABV           |           | 
+| FG            | 1.024     | 
+| AA            | 72%       | 
+| ABV           | 8.8%      | 
 
 Added ~1.15 mL/gal of phosphoric to mash water to get to 5.7.
 
 Measured mash pH after 10 mins: ~5.10 @ room temp (or about 4.9 at mash temperature) - a little bit low (probably due to roasted malts).
 
 Only collected 2.8 gal on first batch - needed to collect 3.9 on second batch (need to account for RIMS rocket dead space next time, 8" tall 5" diameter = ~0.7 gal)
+
+Transferred to barrel (which was previously used for a chocolate stout-distilled bourbon) 15 days after pitching. Specific gravity 1.024.
 
 ## Tasting Notes
 
