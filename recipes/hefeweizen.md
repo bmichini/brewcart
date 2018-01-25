@@ -61,14 +61,17 @@ Boil 60 min. Whirlpool and chill within 20 minutes after knockout.
 
 | Value         | Measured  |
 | :-----------: |:---------:|
-| Pre-boil SG   |      |
-| Pre-boil vol  | gal   |
+| Pre-boil SG   | 1.045     |
+| Pre-boil vol  | 7.2 gal   |
 | Post-boil vol | gal   |
-| OG            |      | 
+| OG            | 1.051     | 
 | FG            |      | 
 | AA            |        | 
 | ABV           |       | 
 
+Measured mash pH after 10 mins: ~5.44 @ room temp (or about 5.14 at mash temperature).
+
+Final volume into fermentor (which includes 1.5L starter) was 5.5 gal.
 
 ## Tasting Notes
 
