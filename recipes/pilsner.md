@@ -62,15 +62,18 @@ Boil 75 min. Whirlpool and chill within 20 minutes after knockout.
 
 | Value         | Measured  |
 | :-----------: |:---------:|
-| Pre-boil SG   |      |
-| Pre-boil vol  |  gal   |
-| Post-boil vol | gal   |
-| OG            |      | 
+| Pre-boil SG   | 1.044     |
+| Pre-boil vol  | 7.45 gal  |
+| Post-boil vol | 6.4 gal   |
+| OG            | 1.055     | 
 | FG            |      | 
 | AA            |        | 
 | ABV           |       | 
 
-Measured mash pH after 10 mins: xxxx @ room temp (or about xxxx at mash temperature).
+Measured mash pH after 10 mins: 5.55 @ room temp (or about 5.25 at mash temperature).
+
+Measured sparge water pH (with 0.7 mL/gal acid added): 5.75.
+
 
 
 ## Tasting Notes

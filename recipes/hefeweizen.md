@@ -73,6 +73,8 @@ Measured mash pH after 10 mins: ~5.44 @ room temp (or about 5.14 at mash tempera
 
 Final volume into fermentor (which includes 1.5L starter) was 5.5 gal.
 
+About 0.5 gal of sanitizer solution got sucked into the fermentor when chilling.
+
 ## Tasting Notes
 
 ## Resources
