@@ -74,6 +74,7 @@ Measured mash pH after 10 mins: 5.55 @ room temp (or about 5.25 at mash temperat
 
 Measured sparge water pH (with 0.7 mL/gal acid added): 5.75.
 
+Gravity @ 5 days: 1.031. Gravity @ 9 days: 1.024.
 
 
 ## Tasting Notes

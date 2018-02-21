@@ -25,13 +25,13 @@ Total grain: 16.75 lbs
 
 #### Hops
 
-* 0.75 oz Nugget (13% AA) @ 60 minutes
-* 0.75 oz Columbus (15.5% AA) @ 20 minutes
-* 1.0 oz Palisade (7.5% AA) @ 10 minutes
-* 0.5 oz Nugget (13% AA) @ 5 minutes
-* 1.5 oz Nugget (13% AA) @ flameout
-* 0.75 oz Columbus (15.5% AA) @ flameout
-* 0.75 oz Simcoe (13% AA) @ flameout
+* 0.75 oz Nugget (15.1% AA) @ 60 minutes
+* 0.75 oz Columbus (14.1% AA) @ 20 minutes
+* 1.0 oz Willamette (4.8% AA) @ 10 minutes
+* 0.5 oz Nugget (15.1% AA) @ 5 minutes
+* 1.5 oz Nugget (15.1% AA) @ flameout
+* 0.75 oz Columbus (14.1% AA) @ flameout
+* 0.75 oz Simcoe (13.6% AA) @ flameout
 * 1.0 oz Nugget @ dry hop (5 days)
 * 0.75 oz Columbus @ dry hop (5 days)
 * 0.5 oz Simcoe @ dry hop (5 days)
@@ -71,18 +71,21 @@ Boil 60 min. Whirlpool and chill within 20 minutes after knockout.
 
 | Value         | Measured  |
 | :-----------: |:---------:|
-| Pre-boil SG   |      |
-| Pre-boil vol  |  gal  |
-| Post-boil vol |  gal   |
-| OG            |      | 
-| FG            |      | 
-| AA            |        | 
-| ABV           |       | 
+| Pre-boil SG   | 1.061     |
+| Pre-boil vol  | 7.8 gal   |
+| Post-boil vol |  gal |
+| OG            | 1.067     | 
+| FG            | 1.014     | 
+| AA            | 78%       | 
+| ABV           | 7.0%      | 
 
-Measured mash pH after 10 mins: xxx @ room temp (or about xxx at mash temperature).
+Measured mash pH after 10 mins: 5.5 @ room temp (or about 5.2 at mash temperature).
 
-Measured sparge water pH (with 0.7 mL/gal acid added): xxx.
+Measured sparge water pH (with 0.7 mL/gal acid added): 5.8 @ 45 degC.
 
+Did not use a started - added two packets of liquid yeast directly to fermentor.
+
+Gravity at 8 days was 1.014.
 
 
 ## Tasting Notes
