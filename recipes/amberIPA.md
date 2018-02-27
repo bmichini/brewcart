@@ -83,7 +83,7 @@ Measured mash pH after 10 mins: 5.5 @ room temp (or about 5.2 at mash temperatur
 
 Measured sparge water pH (with 0.7 mL/gal acid added): 5.8 @ 45 degC.
 
-Did not use a started - added two packets of liquid yeast directly to fermentor.
+Did not use a starter - added two packets of liquid yeast directly to fermentor.
 
 Gravity at 8 days was 1.014.
 

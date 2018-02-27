@@ -65,9 +65,9 @@ Boil 60 min. Whirlpool and chill within 20 minutes after knockout.
 | Pre-boil vol  | 7.2 gal   |
 | Post-boil vol | gal   |
 | OG            | 1.051     | 
-| FG            |      | 
-| AA            |        | 
-| ABV           |       | 
+| FG            | 1.011     | 
+| AA            | 78%       | 
+| ABV           | 5.3%      | 
 
 Measured mash pH after 10 mins: ~5.44 @ room temp (or about 5.14 at mash temperature).
 
@@ -76,6 +76,8 @@ Final volume into fermentor (which includes 1.5L starter) was 5.5 gal.
 About 0.5 gal of sanitizer solution got sucked into the fermentor when chilling.
 
 ## Tasting Notes
+
+Tasted against Weihenstephaner Hefe Weissbier. Was able to distinguish in a triangle test, but was very close. Commercial version had a slightly more pronounced grainy or malty taste. Homebrew version also had a very slight metallic twinge (could be from the star san that was sucked in).
 
 ## Resources
 
