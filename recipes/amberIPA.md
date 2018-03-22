@@ -1,7 +1,7 @@
 # Amber IPA
 
 * **Style**: Red IPA (BJCP2015 category 21B)
-* **Brew date**: 
+* **Brew date**: February 11, 2018
 * **Target characteristics**: 
 
 | Value      | Target |
