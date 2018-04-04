@@ -1,4 +1,4 @@
-# Amber IPA
+# Hazy IPA
 
 * **Style**: American IPA (BJCP2015 category 21A)
 * **Brew date**: March 24, 2018
@@ -70,19 +70,19 @@ Boil 60 min. Whirlpool and chill within 20 minutes after knockout.
 
 | Value         | Measured  |
 | :-----------: |:---------:|
-| Pre-boil SG   |      |
-| Pre-boil vol  | gal   |
+| Pre-boil SG   | 1.052     |
+| Pre-boil vol  | 7.8 gal   |
 | Post-boil vol |  gal |
-| OG            |     | 
-| FG            |      | 
-| AA            |        | 
-| ABV           |       | 
+| OG            | 1.062     | 
+| FG            | 1.015     | 
+| AA            | 75%       | 
+| ABV           | 6.2%      | 
 
 Measured mash pH after 10 mins: XXX @ room temp (or about XXX at mash temperature).
 
 Measured sparge water pH (with 0.7 mL/gal acid added): XXX @ XXX degC.
 
-
+Only collected 3.15 with first batch (should have collected 3.9).
 
 ## Tasting Notes
 
