@@ -31,9 +31,11 @@ Total grain: 16.00 lbs
 * 1.0 oz Citra @ whirlpool 20 mins
 * 1.0 oz Galaxy @ whirlpool 20 mins
 * 1.0 oz Mosaic @ whirlpool 20 mins
-* 3.0 oz Citra @ dry hop
-* 1.5 oz Galaxy @ dry hop
-* 1.5 oz Mosaic @ dry hop
+* ~3.0 oz Citra @ dry hop~
+* ~1.5 oz Galaxy @ dry hop~
+* ~1.5 oz Mosaic @ dry hop~
+
+Modified dry hop schedule - used Mosaic and Citra instead.
 
 #### Yeast
 
@@ -84,7 +86,11 @@ Measured sparge water pH (with 0.7 mL/gal acid added): XXX @ XXX degC.
 
 Only collected 3.15 with first batch (should have collected 3.9).
 
+Accidentally froze the beer (whoops!) again.
+
 ## Tasting Notes
+
+Distinct vegetal/grassy notes early on. Could be due to the citra (noticed this in a Fieldwork beer with Citra hops)?
 
 ## Resources
 
