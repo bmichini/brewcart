@@ -88,8 +88,7 @@ Measured mash pH after 20 mins: ~5.55 @ 46 degC (or about 5.35 at mash temperatu
 
 ## Tasting Notes
 
-* Did the beer achieve target characteristics?
-* Photos of the beer
+Great taste, definitely notice the herbs (maybe a bit light on the rosemary). Very dry and drinkable. Good head retention and appearance.
 
 ## Resources
 

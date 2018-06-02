@@ -50,7 +50,7 @@ For mash water, add 1.0 mL/gal of 10% phosphoric acid to achieve mash pH of 5.4 
 Mash all grains. Single infusion BIAB mash.
 
 * (optional) 122 degF (15 mins)
-* 150 degF (60 mins) saccharification
+* 151 degF (60 mins) saccharification
 * 168 degF (10 mins) mash out
 
 No sparge BIAB.
@@ -70,19 +70,20 @@ Boil 60 min. Whirlpool and chill within 20 minutes after knockout.
 
 | Value         | Measured  |
 | :-----------: |:---------:|
-| Pre-boil SG   |      |
-| Pre-boil vol  |  gal     |
+| Pre-boil SG   | 1.038     |
+| Pre-boil vol  | 9.0 gal   |
 | Post-boil vol |  gal   |
-| OG            |      | 
+| OG            | 1.046     | 
 | FG            |           | 
 | AA            |           | 
 | ABV           |           | 
 
 
-Mash water pH was xxx @ room temp after adding xxx mL/gal of acid.
+Added 1.0 mL/gal of acid to mash water.
 
-Measured mash pH after 20 mins: xxx @ xxx degC (or about xxx at mash temperature).
+Measured mash pH after 20 mins: 5.77 @ 30 degC (or about 5.5 at mash temperature.. too high!).
 
+Too much water! Targeted 8.5 gal pre-boil volume and got 9.0 gal. Grain only absorbed about .3 qt/lb.
 
 
 
