@@ -89,7 +89,11 @@ Too much water! Targeted 8.5 gal pre-boil volume and got 9.0 gal. Grain only abs
 
 ## Tasting Notes
 
-* Did the beer achieve target characteristics?
+Orange stands out, could add a touch more 
+
+Tasted vs. Allagash White. Allash was more carbonated and much paler (light straw yellow), whereas ours was a bit more red. Allagash had more of a lemon-y citrus (ours was more orange-y). Ours was fuller bodied. Nelson hops were a nice touch. Ours was slightly more bitter. Allagash had more yeast character (like a mini Tripel).
+
+
 * Photos of the beer
 
 ## Resources
