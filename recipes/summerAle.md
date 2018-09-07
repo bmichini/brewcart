@@ -67,18 +67,18 @@ Boil 60 min. Whirlpool and chill within 20 minutes after knockout.
 
 | Value         | Measured  |
 | :-----------: |:---------:|
-| Pre-boil SG   |      |
-| Pre-boil vol  |  gal   |
-| Post-boil vol |  gal   |
-| OG            |      | 
+| Pre-boil SG   | 1.047     |
+| Pre-boil vol  | 13.75 gal |
+| Post-boil vol | ~12.75 gal |
+| OG            | 1.052     | 
 | FG            |           | 
 | AA            |           | 
 | ABV           |           | 
 
 
-Added xxx mL/gal of acid to mash water.
+Added 1.0 mL/gal of acid to mash water. Measured mash pH after 20 mins: 5.42 @ 33 degC (or about 5.22 at mash temperature - perfect!).
 
-Measured mash pH after 20 mins: xxx @ xxx degC (or about xxx at mash temperature).
+Gravity at the end of 60 minute mash was 1.046. Was at about 1.047 after mash out.
 
 ## Tasting Notes
 
