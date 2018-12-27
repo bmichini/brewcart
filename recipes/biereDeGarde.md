@@ -65,10 +65,10 @@ Boil 75 min. Whirlpool and chill within 20 minutes after knockout.
 
 | Value         | Measured  |
 | :-----------: |:---------:|
-| Pre-boil SG   |      |
-| Pre-boil vol  |  gal |
+| Pre-boil SG   | 1.063     |
+| Pre-boil vol  | 14+ gal |
 | Post-boil vol |  gal |
-| OG            |      | 
+| OG            | 1.071     | 
 | FG            |           | 
 | AA            |           | 
 | ABV           |           | 
