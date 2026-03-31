@@ -1,3 +1,4 @@
+#define USE_Elegoo_SHIELD_PINOUT
 #include <Elegoo_GFX.h>    // Core graphics library
 #include <Elegoo_TFTLCD.h> // Hardware-specific library
 #include <TouchScreen.h>
@@ -19,9 +20,9 @@
 #define XP 8   // can be a digital pin
 //Touch For New ILI9341 TP
 #define TS_MINX 120
-#define TS_MAXX 900
-#define TS_MINY 70
-#define TS_MAXY 920
+#define TS_MAXX 920
+#define TS_MINY 120//70
+#define TS_MAXY 970//920
 Elegoo_TFTLCD tft(LCD_CS, LCD_CD, LCD_WR, LCD_RD, LCD_RESET);
 TouchScreen ts = TouchScreen(XP, YP, XM, YM, 300);
 
@@ -82,7 +83,10 @@ char t_settemp[] ="   ";
 char t_currtemp[] ="   ";
 char t_set[] ="SET";
 #define MAX_TEMP 170.0
-#define MIN_TEMP 130.0
+#define MIN_TEMP 120.0
+#define MASH_TEMP_PWR_THRESH 140.0
+#define MASH_LOW_KW 2.0
+#define MASH_NOM_KW 3.0
 
 // Limits
 #define LL_GRAINWEIGHT 0.1
@@ -254,15 +258,17 @@ void draw_temp(){
   tft.drawFastVLine(TEMP_X, BAR_Y, BAR_HEIGHT, rgb_to_565(0,0,0));
   int w = 10;
   tft.drawFastHLine(TEMP_X-w, BAR_Y, w*2, rgb_to_565(0,0,0)); // Top
-  tft.drawFastHLine(TEMP_X-w, BAR_Y+BAR_HEIGHT/4, w*2, rgb_to_565(0,0,0));
-  tft.drawFastHLine(TEMP_X-w, BAR_Y+BAR_HEIGHT/2, w*2, rgb_to_565(0,0,0));
-  tft.drawFastHLine(TEMP_X-w, BAR_Y+BAR_HEIGHT*3/4, w*2, rgb_to_565(0,0,0));
+  tft.drawFastHLine(TEMP_X-w, BAR_Y+BAR_HEIGHT/5, w*2, rgb_to_565(0,0,0));
+  tft.drawFastHLine(TEMP_X-w, BAR_Y+BAR_HEIGHT*2/5, w*2, rgb_to_565(0,0,0));
+  tft.drawFastHLine(TEMP_X-w, BAR_Y+BAR_HEIGHT*3/5, w*2, rgb_to_565(0,0,0));
+  tft.drawFastHLine(TEMP_X-w, BAR_Y+BAR_HEIGHT*4/5, w*2, rgb_to_565(0,0,0));
   tft.drawFastHLine(TEMP_X-w, BAR_Y+BAR_HEIGHT, w*2, rgb_to_565(0,0,0)); // Bottom
-  w = 5;
-  tft.drawFastHLine(TEMP_X-w, BAR_Y+BAR_HEIGHT/8, w*2, rgb_to_565(0,0,0));
-  tft.drawFastHLine(TEMP_X-w, BAR_Y+BAR_HEIGHT*3/8, w*2, rgb_to_565(0,0,0));
-  tft.drawFastHLine(TEMP_X-w, BAR_Y+BAR_HEIGHT*5/8, w*2, rgb_to_565(0,0,0));
-  tft.drawFastHLine(TEMP_X-w, BAR_Y+BAR_HEIGHT*7/8, w*2, rgb_to_565(0,0,0));
+  w = 3;
+  tft.drawFastHLine(TEMP_X-w, BAR_Y+BAR_HEIGHT/10, w*2, rgb_to_565(0,0,0));
+  tft.drawFastHLine(TEMP_X-w, BAR_Y+BAR_HEIGHT*3/10, w*2, rgb_to_565(0,0,0));
+  tft.drawFastHLine(TEMP_X-w, BAR_Y+BAR_HEIGHT*5/10, w*2, rgb_to_565(0,0,0));
+  tft.drawFastHLine(TEMP_X-w, BAR_Y+BAR_HEIGHT*7/10, w*2, rgb_to_565(0,0,0));
+  tft.drawFastHLine(TEMP_X-w, BAR_Y+BAR_HEIGHT*9/10, w*2, rgb_to_565(0,0,0));
   sprintf(t_mintemp, "%3d", (int)MIN_TEMP );
   sprintf(t_maxtemp, "%3d", (int)MAX_TEMP );
   tft.setTextColor( rgb_to_565(0,0,0), rgb_to_565(255,255,255));
@@ -909,9 +915,9 @@ void setup() {
   uint16_t color_white = rgb_to_565(255,255,255);
 
   // Buttons init
-  b_preheat.initButton(&tft, 120, 55, 200, 75, color_outline, color_lightyellow, color_black, b_preheat_text, 3);
-  b_mash.initButton(&tft, 120, 160, 200, 75, color_outline, color_lightorange, color_black, b_mash_text, 3);
-  b_boil.initButton(&tft, 120, 266, 200, 75, color_outline, color_lightred, color_black, b_boil_text, 3);
+  b_preheat.initButton(&tft, 120, 105, 200, 60, color_outline, color_lightyellow, color_black, b_preheat_text, 3);
+  b_mash.initButton(&tft, 120, 190, 200, 60, color_outline, color_lightorange, color_black, b_mash_text, 3);
+  b_boil.initButton(&tft, 120, 275, 200, 60, color_outline, color_lightred, color_black, b_boil_text, 3);
   b_back.initButton(&tft, 60, 290, 100, 50, color_outline, color_lightred, color_black, b_back_text, 3);
   b_next.initButton(&tft, 180, 290, 100, 50, color_outline, color_lightgreen, color_black, b_next_text, 3);
   b_home.initButton(&tft, 180, 290, 100, 50, color_outline, color_lightblue, color_black, b_home_text, 3);
@@ -978,7 +984,15 @@ void loop() {
   // Control output relay for burner based on mode
    if(curr_screen == MASH || curr_screen == PREHEAT){
     if( var_temp < var_tempsetpoint_F && var_gpm > GPM_MASH_MIN && var_temp >= TEMPSENSOR_MIN_F && var_temp <= TEMPSENSOR_MAX_F){
-      set_kw( MAX_KW );
+      if( curr_screen == MASH ){
+        if( var_temp < MASH_TEMP_PWR_THRESH ){
+          set_kw(MASH_LOW_KW);
+        }else{
+          set_kw(MASH_NOM_KW);
+        }
+      }else{ // PREHEAT
+        set_kw( MAX_KW );
+      }
     }else{
       set_kw( 0.0 );
     }
